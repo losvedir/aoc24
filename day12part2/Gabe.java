@@ -94,19 +94,19 @@ public class Gabe {
         for (Point p : region) {
             // west edge
             if (!region.contains(new Point(p.x - 1, p.y))) {
-                edges.add(new Edge(p.x, p.y, 'v'));
+                edges.add(new Edge(p.x, p.y, 'w'));
             }
             // north edge
             if (!region.contains(new Point(p.x, p.y - 1))) {
-                edges.add(new Edge(p.x, p.y, 'h'));
+                edges.add(new Edge(p.x, p.y, 'n'));
             }
             // east edge
             if (!region.contains(new Point(p.x + 1, p.y))) {
-                edges.add(new Edge(p.x + 1, p.y, 'v'));
+                edges.add(new Edge(p.x + 1, p.y, 'e'));
             }
             // south edge
             if (!region.contains(new Point(p.x, p.y + 1))) {
-                edges.add(new Edge(p.x, p.y + 1, 'h'));
+                edges.add(new Edge(p.x, p.y + 1, 's'));
             }
 
         }
@@ -123,7 +123,7 @@ public class Gabe {
             sides += 1;
 
             // if the edge is horizontal
-            if (e.o == 'h') {
+            if (e.o == 'n' || e.o == 's') {
                 int dx = 0;
                 // check for adjacent edges to the right
                 while (true) {

@@ -41,3 +41,23 @@ If it gets it right, then:
 
 - Opus compilation failed because it failed to import `IntStream`, but that was
   a trivial fix (Click "Quick Fix" in VSCode), so I didn't count it against it
+
+# Day 12
+
+- None could get part 2. Only me! But the first attempt, I got the same wrong
+  answer as GPT-o1 Pro. But the instructions called out
+
+> Be especially careful when counting the fence around regions like the one full
+> of type A plants; in particular, each section of fence has an in-side and an
+> out-side, so the fence does not connect across the middle of the region (where
+> the two B regions touch diagonally)
+
+and eventually I figured it out.
+
+# Day 13
+
+Brute force works for Part 1, but Part 2 requires an algebraic solution. Only
+GPT-o1+ and Sonnet identified the need, and were able to solve it that way.
+
+With prompting Opus made noises like it understood the algebraic solution, but
+it didn't work.
