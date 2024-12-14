@@ -35,7 +35,7 @@ If it gets it right, then:
 | 11p1    | n                                     | y                                     | y                                     | y                                     |                                       | y                                     | y                                     |
 | 11p2    |                                       | y                                     | y                                     | y                                     |                                       | n                                     | n                                     |
 | Day 12  |                                       |                                       | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   | :white_check_mark: :x:                | :x:                                   |
-| Day 13  |                                       |                                       |                                       |                                       |                                       |                                       |                                       |
+| Day 13  | :white_check_mark: :x:                | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :x:                                   | :x:                                   | :white_check_mark: :white_check_mark: | :white_check_mark: :x:                |
 
 # Day 1
 
