@@ -36,6 +36,7 @@ If it gets it right, then:
 | 11p2    |                                       | y                                     | y                                     | y                                     |                                       | n                                     | n                                     |
 | Day 12  |                                       |                                       | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   | :white_check_mark: :x:                | :x:                                   |
 | Day 13  | :white_check_mark: :x:                | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :x:                                   | :x:                                   | :white_check_mark: :white_check_mark: | :white_check_mark: :x:                |
+| Day 14  | :white_check_mark:                    |                                       | :white_check_mark:                    | :x:                                   | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   |
 
 # Day 1
 
@@ -61,3 +62,41 @@ GPT-o1+ and Sonnet identified the need, and were able to solve it that way.
 
 With prompting Opus made noises like it understood the algebraic solution, but
 it didn't work.
+
+# Day 14
+
+Part 2 is:
+
+> During the bathroom break, someone notices that these robots seem awfully
+> similar to ones built and used at the North Pole. If they're the same type of
+> robots, they should have a hard-coded Easter egg: very rarely, most of the
+> robots should arrange themselves into _a picture of a Christmas tree_. _What
+> is the fewest number of seconds that must elapse for the robots to display the
+> Easter egg?_
+
+Sonnet had the right idea:
+
+> I notice this prompt is quite open-ended and doesn't give us much information
+> about what exactly constitutes a Christmas tree pattern. This seems like a
+> creative interpretation challenge. Let's write a solution that looks for a
+> triangular arrangement of robots that could represent a Christmas tree.
+>
+> This solution builds on part 1 but adds pattern recognition logic to detect a
+> Christmas tree formation. Key aspects:
+
+> Scans the grid for potential tree top points Checks for a triangular pattern
+> below each potential top point Verifies the pattern meets criteria for a
+> Christmas tree:
+
+> Single point at top Widening pattern below Minimum height of 5 rows Trunk at
+> bottom Minimum number of robots to form a recognizable shape
+
+> The pattern detection is somewhat flexible to allow for different possible
+> tree formations while still maintaining the basic Christmas tree shape
+> requirements. The solution searches through timestamps until it finds a valid
+> pattern or reaches the maximum time limit.
+
+Unfortunately, the code didn't work.
+
+Gemini Flash totally misinterpreted it, and updated the code to look for cycle
+detection.
