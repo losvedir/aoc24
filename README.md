@@ -36,7 +36,8 @@ If it gets it right, then:
 | 11p2    |                                       | y                                     | y                                     | y                                     |                                       | n                                     | n                                     |
 | Day 12  |                                       |                                       | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   | :white_check_mark: :x:                | :x:                                   |
 | Day 13  | :white_check_mark: :x:                | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :x:                                   | :x:                                   | :white_check_mark: :white_check_mark: | :white_check_mark: :x:                |
-| Day 14  | :white_check_mark:                    |                                       | :white_check_mark:                    | :x:                                   | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   |
+| Day 14  | :white_check_mark:                    |                                       | :white_check_mark: :x:                | :x:                                   | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   |
+| Day 15  | :x:                                   | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   | :x:                                   | :x:                                   | :x:                                   |
 
 # Day 1
 
@@ -100,3 +101,7 @@ Unfortunately, the code didn't work.
 
 Gemini Flash totally misinterpreted it, and updated the code to look for cycle
 detection.
+
+# Day 15
+
+Gemini Flash cut off mid- method definition. Maybe too small of context window?
