@@ -26,18 +26,19 @@ If it gets it right, then:
 
 ## Results
 
-| Problem | GPT-4o                                | GPT-o1                                | GPT-o1 Pro                            | Gemini Pro 1.5                        | Gemini Flash 2.0                      | Sonnet                                | Opus                                  |
-| ------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- |
-| Day 1   | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: |
-| 1p2     |                                       |                                       |                                       |                                       |                                       |                                       |                                       |
-| 10p1    | y                                     | y                                     | y                                     | n                                     | y                                     | y                                     | n                                     |
-| 10p2    | n                                     | y                                     | y                                     |                                       | y                                     | y                                     |                                       |
-| 11p1    | n                                     | y                                     | y                                     | y                                     |                                       | y                                     | y                                     |
-| 11p2    |                                       | y                                     | y                                     | y                                     |                                       | n                                     | n                                     |
-| Day 12  |                                       |                                       | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   | :white_check_mark: :x:                | :x:                                   |
-| Day 13  | :white_check_mark: :x:                | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :x:                                   | :x:                                   | :white_check_mark: :white_check_mark: | :white_check_mark: :x:                |
-| Day 14  | :white_check_mark:                    |                                       | :white_check_mark: :x:                | :x:                                   | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   |
-| Day 15  | :x:                                   | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   | :x:                                   | :x:                                   | :x:                                   |
+| Problem | GPT-4o                                | GPT-o1                                | GPT-o1 Pro                            | Gemini Pro 1.5                        | Gemini Flash 2.0                      | Gemini 2.0 Advanced | Sonnet                                | Opus                                  |
+| ------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------- | ------------------------------------- | ------------------------------------- |
+| Day 1   | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: |                     | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: |
+| 1p2     |                                       |                                       |                                       |                                       |                                       |                     |                                       |                                       |
+| 10p1    | y                                     | y                                     | y                                     | n                                     | y                                     |                     | y                                     | n                                     |
+| 10p2    | n                                     | y                                     | y                                     |                                       | y                                     |                     | y                                     |                                       |
+| 11p1    | n                                     | y                                     | y                                     | y                                     |                                       |                     | y                                     | y                                     |
+| 11p2    |                                       | y                                     | y                                     | y                                     |                                       |                     | n                                     | n                                     |
+| Day 12  |                                       |                                       | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   |                     | :white_check_mark: :x:                | :x:                                   |
+| Day 13  | :white_check_mark: :x:                | :white_check_mark: :white_check_mark: | :white_check_mark: :white_check_mark: | :x:                                   | :x:                                   |                     | :white_check_mark: :white_check_mark: | :white_check_mark: :x:                |
+| Day 14  | :white_check_mark:                    |                                       | :white_check_mark: :x:                | :x:                                   | :white_check_mark: :x:                |                     | :white_check_mark: :x:                | :x:                                   |
+| Day 15  | :x:                                   | :white_check_mark: :x:                | :white_check_mark: :x:                | :x:                                   | :x:                                   | :x:                 | :x:                                   | :x:                                   |
+| Day 16  | :white_check_mark: :x:                |                                       | :white_check_mark: :white_check_mark: | :x:                                   | :x:                                   | :white_check_mark:  | :white_check_mark: :x:                | :x:                                   |
 
 # Day 1
 
@@ -105,3 +106,8 @@ detection.
 # Day 15
 
 Gemini Flash cut off mid- method definition. Maybe too small of context window?
+
+# Day 16
+
+I had a typo in the input saying `"input/day16.tx6"`, and Gemini Flash and GPT
+correctly used it rather than doing `.txt`.
